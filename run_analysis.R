@@ -23,7 +23,7 @@ trainlabel <- read.table("UCIHARDataset/train/y_train.txt")
 mergedlabel <- rbind(trainlabel, testlabel) 
 
 #Let's right away rename the appropriate activities!
-Activity <- c("Walking", "Climbing Up", "Climbing Down", "Sitting", "Standing", "Laying")
+Activity <- c("WALKING", "WALKING_UPSTAIRS", "WALKING_DOWNSTAIRS", "SITTING", "STANDING", "LAYING")
 for (i in 1:length(Activity)) {
   mergedlabel[mergedlabel == i] <- Activity[i]
 }
