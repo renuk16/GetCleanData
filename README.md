@@ -32,9 +32,14 @@ The descriptions of the variables in the dataset are available in **UCIHARDDatas
 
 This is the main script that performs all the tasks given in the problem statement. The script can be directly run from the command line using 
 
-source("run_analysis.R")
+*source("run_analysis.R")*
 
-as long as all the paths of the data sets are preserved.
+as long as all the paths of the data sets are preserved. The code produces a tidy data which is saved in *tidydata.txt*. The nicest way to read this data is to use the read.table command:
 
+*read.table("tidydata.txt", header = T)*
 
+The tidydata should contain 181 lines of text, including the header.
 
+##CodeBook.md
+
+In order to understand the full process of what run_ananlysis.R does, refer to the codebook, CodeBook.md.
